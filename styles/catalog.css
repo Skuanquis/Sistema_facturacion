@@ -1,0 +1,35 @@
+.catalog {
+    padding: 2rem 0 2rem 2rem;
+    width: 100%;
+    margin: 0 auto;
+}
+.catalog_title {
+    margin-bottom: 1rem;
+}
+#search-container{
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+}
+#search-container input {
+    background-color: transparent;
+    border-bottom: 2px solid #110f29;
+    padding: 1em .3em;
+}
+#search-container input:focus{
+    border-bottom-color: var(--red);
+}
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    margin-top: .5em;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+}
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+} 

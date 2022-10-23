@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de facturación</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/sidemenu.css">
+    <link rel="stylesheet" href="./styles/catalog.css">
+    <link rel="stylesheet" href="./styles/card.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu_logo">LEGO LAND</div>
+            <div class="menu_user">Aaron</div>
+        </nav>
+        <nav class="tools">
+            <ul>
+                <li>
+                    <a href="" class="tool compare">
+                        <div class="tool_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.624 9.624 0 0 0 7.556 8a9.624 9.624 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.595 10.595 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.624 9.624 0 0 0 6.444 8a9.624 9.624 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192zm0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192z"/>
+                            </svg>
+                        </div>
+                        <span>Comparar productos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="tool wish">
+                        <div class="tool_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                        </div>
+                        <span>Lista de deseos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="tool cart">
+                        <div class="tool_icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </div>
+                        <span>Carrito</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="sidemenu" id="sidemenu">
+            <div class="side-item">
+                <div class="item-header">
+                    <h5 class="item-title">Precio</h5>
+                    <div class="item-icon">+</div>
+                </div>
+                <div class="item-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis beatae delectus mollitia ab quam eum quisquam sint natus harum laboriosam.
+                </div>
+            </div>
+            <div class="side-item">
+                <div class="item-header">
+                    <h5 class="item-title">Categoria</h5>
+                    <div class="item-icon">+</div>
+                </div>
+                <div class="item-content">
+                    <input type="checkbox" name="" id="check">
+                    <label for="check">Duplo</label>
+                </div>
+            </div>
+            <div class="apply-container">
+                <button class="apply">Aplicar filtros</button>
+            </div>
+        </div>
+
+        <section class="catalog">
+            <div class="catalog_title">
+                <h1>Catálogo</h1>
+            </div>
+            <div id="search-container">
+                <input 
+                    type="search" 
+                    id="search-input" 
+                    placeholder="Busca el nombre del producto aquí"
+                />
+                <button id="search">Buscar</button>
+            </div>
+            <div id="products" class="catalog_items">
+    
+                <div class="card">
+                    <div class="card_image">
+                        <div class="card_fav">
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card_image-container">
+                            <img src="https://www.gannett-cdn.com/presto/2021/11/19/USAT/cd15a425-e751-46a8-98c2-86993fcf9dce-croc.png?width=660&height=372&fit=crop&format=pjpg&auto=webp" alt="">
+                        </div>
+                    </div>
+                    <div class="card_details">
+                        <p class="card_code subtitle">Vendor code: 10521</p>
+                        <h3 class="card_title">Big Blue lego jeep</h3>
+                        <p class="card_description">
+                            Blue car set
+                        </p>
+                    </div>
+                    <div class="card_options">
+                        <div class="price_details">
+                            <p class="subtitle">Precio:</p>
+                            <div class="prices">
+                                <h3 class="card_price">400$</h3>
+                                <p class="subtitle">600$</p>
+                            </div>
+                        </div>
+                        <a href="" class="card_action">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+    
+            </div>
+            <!-- <div class="footer">
+                <a href="" class="prev">Anterior</a>
+                <ul class="pages">
+                    <li class="page">
+                        <span>1</span>
+                    </li>
+                    <li class="page">
+                        <span>4</span>
+                    </li>
+                    <li class="page">
+                        <span>5</span>
+                    </li>
+                    <li class="page">
+                        <span>6</span>
+                    </li>
+                </ul>
+                <a href="" class="prev">Siguiente</a>
+            </div> -->
+        </section>
+    </div>
+    <script type="module" src="./js/display.js"></script>
+</body>
+</html> 

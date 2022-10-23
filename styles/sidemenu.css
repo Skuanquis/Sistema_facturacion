@@ -1,0 +1,74 @@
+.sidemenu {
+    border: 1px solid var(--gray);
+    border-top: none;
+    height: max-content;
+}
+.side-item {
+    border-bottom: 1px solid var(--gray);
+}
+.item-header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.item-title{
+    font-weight: 600;
+}
+.item-icon{
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+.item-content {
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-content input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-content input[type="checkbox"]::after {
+    content: '✔️';
+    color: #f3f3f3;
+    display: none;
+    font-size: .5rem;
+}
+.item-content input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+}
+.item-content input[type="checkbox"]:checked{
+    background-color: #5bcd3e;
+}
+.item-content input[type="checkbox"]:checked::after{
+    display: block;
+}
+.item-content label {
+    color: #4c4c4c;
+    cursor: pointer;
+    font-size: .8rem;
+}
+.side-item.active .item-content {
+    max-height: fit-content;
+    margin: 1rem;
+}
+.apply {
+    background-color: #e53e38;
+    color: var(--white);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+}

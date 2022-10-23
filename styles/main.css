@@ -1,0 +1,37 @@
+:root {
+    --red: #e53e38;
+    --white: #ffffff;
+    --black: #48495e;
+    --gray: #d1d1d1;
+    --bg-gray: #f3f3f3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------- main -------------------- */
+.main {
+    margin: 0 2rem 2rem 2rem;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+}
+
+/* -------------------- footer -------------------- */
+.hidden {
+    display: none;
+}
+@media screen and (max-width: 720px){
+
+}
