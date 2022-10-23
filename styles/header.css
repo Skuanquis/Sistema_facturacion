@@ -23,6 +23,10 @@
     border: 1px solid var(--gray);
     border-top: none;
 }
+.tools li:hover .tool_icon{
+    background-color: var(--white);
+    color: var(--red);
+}
 .tool{
     display: flex;
     padding: 1rem;
@@ -32,9 +36,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    border: 2px solid var(--red);
     padding: .7rem;
     background-color: var(--red);
     color: var(--white);
+    transition: .3s all ease-in-out;
 }
 .tool span{
     margin-left: .5rem;

@@ -20,12 +20,18 @@
     border-bottom-color: var(--red);
 }
 #search-container button {
-    padding: 1em 2em;
+    padding: 1rem;
     margin-left: 1em;
     margin-top: .5em;
     background-color: var(--red);
     color: var(--white);
     border-radius: 10px;
+    transition: .3s all ease-in-out;
+    border: 2px solid var(--red);
+}
+#search-container button:hover {
+    background-color: var(--white);
+    color: var(--red);
 }
 #products {
     display: grid;

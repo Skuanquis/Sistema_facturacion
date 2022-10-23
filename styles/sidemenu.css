@@ -28,6 +28,19 @@
     justify-content: space-between;
     align-items: center;
 }
+#selected_products {
+    flex-direction: column;
+}
+.selected_product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .2rem;
+    font-size: .9rem;
+}
+.selected_product p {
+    font-size: .7rem;
+}
 .item-content input[type="checkbox"]{
     appearance: none;
     -webkit-appearance: none;
@@ -65,10 +78,16 @@
     margin: 1rem;
 }
 .apply {
-    background-color: #e53e38;
+    background-color: var(--red);
     color: var(--white);
     margin: 1rem;
     border-radius: 10px;
     padding: 1rem;
     cursor: pointer;
+    transition: .3s all ease-in-out;
+    border: 2px solid var(--red);
+}
+.apply:hover {
+    background-color: var(--white);
+    color: var(--red);
 }

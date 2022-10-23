@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/bill.css">
+    <title>Carrito</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="menu">
+            <div class="menu_logo">LEGO LAND</div>
+            <div class="menu_user">Aaron / Steve</div>
+        </nav>
+        
+    </header>
+    <div class="main">
+        <div class="items_list" id="items_list">
+            <div class="item-header">
+                <h4 class="item-title">Items</h4>
+            </div>
+            <div class="item-content">
+                <h5 class="item-title">Juguete azul</h5>
+                <h5 class="item-title">506$</h5>
+            </div>
+            <div class="item-content">
+                <h5 class="item-title">Juguete azul</h5>
+                <h5 class="item-title">506$</h5>
+            </div>
+            <div class="item-content">
+                <h5 class="item-title">Juguete azul</h5>
+                <h5 class="item-title">506$</h5>
+            </div>
+        </div>
+
+        <section class="bill">
+            <div class="bill_title">
+                <h1>Factura</h1>
+            </div>
+            <div class="bill_details">
+                <div class="bill_detail">
+                    <h5>Monto</h5>
+                    <p>605$</p>
+                </div>
+                <div class="bill_detail">
+                    <h5>Tipo de pago</h5>
+                    <p>Una sola vez</p>
+                </div>
+                <div class="bill_detail">
+                    <h5>Dirección</h5>
+                    <p>221B Baker Street</p>
+                </div>
+            </div>
+            <div class="btn_options">
+                <a href="./index.html" class="back">Volver</a>
+                <button class="print">Generar factura</button>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

@@ -1,0 +1,62 @@
+.main {
+    height: 83vh;
+    border: 1px solid var(--gray);
+    border-top: none;
+}
+.items_list {
+    border-right: 1px solid var(--gray);
+    padding: 1rem;
+}
+.item-header {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.bill {
+    padding: 1rem;
+}
+.bill_title {
+    margin-bottom: 1rem;
+}
+.bill_details {
+    border: 1px solid var(--gray);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.bill_detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+.btn_options {
+    display: flex;
+    justify-content: space-between;
+}
+.print,
+.back {
+    padding: 1rem;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+    border: 2px solid var(--red);
+}
+.print:hover {
+    background-color: var(--white);
+    color: var(--red);
+}
+.back {
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+.back:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
