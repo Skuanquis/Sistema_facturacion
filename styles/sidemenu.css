@@ -28,7 +28,8 @@
     justify-content: space-between;
     align-items: center;
 }
-#selected_products {
+#selected_products,
+#wish_list {
     flex-direction: column;
 }
 .selected_product {
@@ -77,10 +78,15 @@
     max-height: fit-content;
     margin: 1rem;
 }
-.apply {
+.apply-container {
+    height: 3rem;
+    padding: 1rem 0;
+    margin: 1rem;
+}
+.apply {    
     background-color: var(--red);
     color: var(--white);
-    margin: 1rem;
+    font-size: .8rem;
     border-radius: 10px;
     padding: 1rem;
     cursor: pointer;

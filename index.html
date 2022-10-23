@@ -57,7 +57,7 @@
         <div class="sidemenu" id="sidemenu">
             <div class="side-item">
                 <div class="item-header">
-                    <h5 class="item-title">Cantidad</h5>
+                    <h5 class="item-title">Productos seleccionados</h5>
                     <div class="item-icon">+</div>
                 </div>
                 <div class="item-content" id="selected_products">
@@ -66,16 +66,19 @@
             </div>
             <div class="side-item">
                 <div class="item-header">
-                    <h5 class="item-title">Categoria</h5>
+                    <h5 class="item-title">Lista de deseos</h5>
                     <div class="item-icon">+</div>
                 </div>
-                <div class="item-content">
+                <div class="item-content" id="wish_list">
+                    <!-- Lista de deseos -->
+                </div>
+                <!-- <div class="item-content">
                     <input type="checkbox" name="" id="check">
                     <label for="check">Duplo</label>
-                </div>
+                </div> -->
             </div>
             <div class="apply-container">
-                <button class="apply">Aplicar filtros</button>
+                <a href="./cart.html" class="apply">Pagar</a>
             </div>
         </div>
 
@@ -88,8 +91,9 @@
                     type="search" 
                     id="search-input" 
                     placeholder="Busca el nombre del producto aquí"
+                    value=""
                 />
-                <button id="search">Buscar</button>
+                <button class="search_btn">Buscar</button>
             </div>
             <div id="products" class="catalog_items">
 
