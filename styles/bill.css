@@ -60,3 +60,8 @@
     background-color: var(--red);
     color: var(--white);
 }
+@media print{
+    .btn_options {
+        display: none;
+    }
+}

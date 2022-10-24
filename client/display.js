@@ -98,6 +98,7 @@ let update_items_selected = () => {
     while (list.firstChild) {
         list.removeChild(list.lastChild);
     }
+
     let items_frag = document.createDocumentFragment()
     for (const key in items_selected) {
         if (Object.hasOwnProperty.call(items_selected, key)) {
@@ -159,6 +160,9 @@ let retirar_item = (id) => {
         }
     }
 }
+let actualizar_local = () => {
+    localStorage.setItem("kart", JSON.stringify(items_selected));
+}
 let wish_item = (id) => {
     if (Object.hasOwnProperty.call(items_wished, id)) {
         delete items_wished[id];
@@ -193,9 +197,11 @@ catalog.addEventListener("click", (e) => {
     if (e.target.classList.contains("delete_product")) {
         // console.log(e.target.parentElement.id);
         retirar_item(e.target.parentElement.id)
+        actualizar_local()
         update_items_selected()
     } else if (e.target.classList.contains("add_product")) {
         agregar_item(e.target.parentElement.id)
+        actualizar_local()
         update_items_selected()
     }
     
@@ -209,12 +215,11 @@ catalog.addEventListener("click", (e) => {
         wish_item(e.target.parentElement.parentElement.parentElement.id)
         update_items_wished()
     }
-
 })
 
 
 window.onload = () => {
-    // filterProduct("all")
     // update_items_selected()
     show_catalog()
+    localStorage.setItem("products", JSON.stringify(products));
 }

@@ -22,7 +22,7 @@
             <div class="item-header">
                 <h4 class="item-title">Items</h4>
             </div>
-            <div class="item-content">
+            <!-- <div class="item-content">
                 <h5 class="item-title">Juguete azul</h5>
                 <h5 class="item-title">506$</h5>
             </div>
@@ -33,14 +33,14 @@
             <div class="item-content">
                 <h5 class="item-title">Juguete azul</h5>
                 <h5 class="item-title">506$</h5>
-            </div>
+            </div> -->
         </div>
 
         <section class="bill">
             <div class="bill_title">
                 <h1>Factura</h1>
             </div>
-            <div class="bill_details">
+            <div class="bill_details" id="bill_details">
                 <div class="bill_detail">
                     <h5>Monto</h5>
                     <p>605$</p>
@@ -50,15 +50,16 @@
                     <p>Una sola vez</p>
                 </div>
                 <div class="bill_detail">
-                    <h5>Dirección</h5>
+                    <h5>NIT / CI</h5>
                     <p>221B Baker Street</p>
                 </div>
             </div>
             <div class="btn_options">
                 <a href="./index.html" class="back">Volver</a>
-                <button class="print">Generar factura</button>
+                <button id="btn_bill" class="print">Generar factura</button>
             </div>
         </section>
     </div>
+    <script src="./client/bill.js"></script>
 </body>
 </html>
