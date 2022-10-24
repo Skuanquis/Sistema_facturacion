@@ -1,4 +1,6 @@
 console.log("Display cargada");
+
+// let products_raw = PETICION SERVIDOR
 let products_raw = {
     data:[
         {
@@ -30,6 +32,16 @@ let products_raw = {
 let products = [...products_raw.data]
 let items_selected = {}
 let items_wished = {}
+
+// ENVIAR AL SERVIDOR
+// let items_selected = {
+//     "id" : ["Producto", cantidad],
+//     "1234" : ["Juguete1", 3],
+//     "1235" : ["Juguete2", 4],
+//     "1236" : ["Juguete3", 5],
+//     "1237" : ["Juguete4", 1]
+// }
+
 
 let frag = document.createDocumentFragment()
 let products_list = document.getElementById("products")

@@ -1,11 +1,12 @@
 let btn = document.getElementById("btn_bill")
 let items_list = document.getElementById("items_list")
 let bill_details = document.getElementById("bill_details")
+
+// ENVIAR AL SERVIDOR
 let items_selected
 
-let frag = document.createDocumentFragment()
-
 // TODO Obtener los datos del servidor
+// PETICION SERVIDOR
 let respuesta = {
     "products" : {
         "1234" : ["Juguete1", 289],
@@ -19,6 +20,7 @@ let respuesta = {
 }
 
 let show_items = () => {
+    let frag = document.createDocumentFragment()
     for (const id_prod in respuesta["products"]) {
         if (Object.hasOwnProperty.call(respuesta["products"], id_prod)) {
             const element = respuesta["products"][id_prod];
@@ -33,6 +35,33 @@ let show_items = () => {
         }
     }
     items_list.appendChild(frag)
+
+    let frag2 = document.createDocumentFragment()
+    
+    let monto = document.createElement("div")
+    monto.classList.add("bill_detail")
+    monto.innerHTML = `
+        <h5>Monto</h5>
+        <p>${respuesta["total"]}$</p>
+    `
+    frag2.appendChild(monto)
+    
+    let tipo = document.createElement("div")
+    tipo.classList.add("bill_detail")
+    tipo.innerHTML = `
+        <h5>Tipo de pago</h5>
+        <p>${respuesta["tipo_pago"]}</p>
+    `
+    frag2.appendChild(tipo)
+
+    let nit = document.createElement("div")
+    nit.classList.add("bill_detail")
+    nit.innerHTML = `
+        <h5>NIT / CI</h5>
+        <p>${respuesta["nit"]}</p>
+    `
+    frag2.appendChild(nit)
+    bill_details.appendChild(frag2)
 }
 
 btn.addEventListener("click", () => {
